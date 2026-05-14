@@ -1,0 +1,379 @@
+/* *{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+STATUS DO JOGADOR */
+/* .status{
+    padding: 10px 10px;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(16, 140, 7);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.display{
+    display: flex;
+    width: 90%;
+    
+}
+.display p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: wheat;
+    height: 100%;
+}
+.statusBarraV{
+    min-width: 70px;
+    width: 10%;
+    height: 5vh;
+    background-color: brown;
+    border: 1px solid;
+    border-radius:5px;
+    margin: 4px 1px;
+    padding: 5px 10px;
+    
+    
+}
+.barraV{
+    border-radius:5px;
+    width: 90%;
+    max-width: 100%;
+    height: 5vh;
+    background-color: red;
+    border: 1px solid;
+    margin:4px -5px;
+}
+.statusBarraE{
+    min-width: 80px;
+    width: 10%;
+    height: 4.5vh;
+    background-color: rgb(11, 11, 173);
+    border-radius:5px;
+    margin: 5px 1px;
+    padding: 3px 10px;
+    border: 1px solid;
+    
+}
+.barraE{
+    border-radius:5px;
+    width: 80%;
+    max-width: 100%;
+    height: 4.5vh;
+    background-color: blue;
+    border: 1px solid;
+    margin:5px -5px;
+}
+
+.scoreV{
+    padding: 5px;
+    
+   
+}
+.scoreE{
+    padding: 4px;
+    
+}
+
+BOTÕES E AÇÕES */
+/* .alinhamento{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.acao-btn{
+    width: 60%;
+    height: 10%;
+    background-color: blueviolet;
+    display: flex;
+    transform: translateY(550%);
+}
+.btn{
+    width: 100px;
+    height:6vh;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.canto-inventario{
+    visibility: hidden;
+    position: relative;
+    left: 0%;
+    overflow: hidden;
+    width: 40%;
+    display: none
+
+}
+
+.canto-inventario.ativo{
+    display: block;
+    width: 40%;
+    height: 85vh;
+    background-color: aqua;
+    visibility: visible;
+    overflow: hidden;
+    position: absolute;
+    left: 60%;
+    overflow: none;
+    
+
+}
+.btn-inventario{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(255, 157, 0);
+    border-radius: 5px;
+    transform: translateY(313px);
+    
+}
+.btn-inventar{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    transform: translate(-200px,0px);
+    background-color: rgb(42, 42, 42);
+    color: #fff;
+}
+
+BOLSA INVENTARIO */
+/*.bolsa { ESTA DENTRO DO CANTO-INVENTARIO
+    width: 100%;
+    height: 200px;
+    background-color: chocolate;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px 0;
+}
+
+.slot p {
+    width: 4px;
+    font-weight: bold;
+}
+
+.slot{
+    width: 40px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.slot .omagem{
+    width: 40px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 900px) {
+    .display{
+        transform: translateX(4%);
+    }
+    .barraV{
+       max-width: 70%;
+    
+    }
+
+    .barraE{
+        max-width: 60%;
+    }
+    
+    .btn-inventario{
+        transform: translateY(70px);
+    }
+
+    .btn-inventar{
+        transform: translateX(20px);
+    }
+
+    .acao-btn{
+        width: 90%;
+        height: 10%;
+        
+    }
+}*/
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    /*background-color:transparent;*/
+}
+
+main .status{
+    width: 100%;
+    height: 15%;
+    background-color:darkred;
+}
+
+.status .display{
+    display: flex;
+    width: 90%;
+    height: 40%;
+    padding: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color:wheat;
+
+    position: relative;
+}
+
+.display .statusBarraV{
+    min-width: 50px;
+    width: 10%;
+    height: 20px;
+    background-color:rgb(220, 0, 0);
+    position: fixed;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.display .statusBarraE{
+    min-width: 50px;
+    width: 10%;
+    height: 20px;
+    background-color:darkblue;
+    position: fixed;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.display .barraV{
+    max-width: 80%;
+    height: 20px;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    left:10% ;
+}
+
+.display .barraE{
+    max-width: 80%;
+    height: 20px;
+    background-color: blue;
+    border-radius: 5px;
+    position: absolute;
+    left:10% ;
+}
+
+/* BASE GRAFICA DO JOGO, ONDE SE PASSA HISTORIA */
+main .alinhamento{
+    width: 100%;
+    height: 85%;
+    /*background-color: rgb(93, 86, 76);*/
+    position: relative;
+}
+
+/* BOTÕES DE AÇÃO DO JOGO */
+.alinhamento .acao-btn{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+    /*background-color: transparent;*/
+    position: absolute;
+    bottom: 10%;
+    
+}
+.acao-btn .btn{
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* PARTE GRAFICA DO INVENTARIO */
+.alinhamento .canto-inventario{
+    display: none;
+}
+
+.canto-inventario.ativo{
+    display: block;
+    height: 100%;
+    width: 40%;
+    background-color:darkred;
+    position: absolute;
+    right: 0%;
+}
+
+.canto-inventario .bolsa{
+    display: block;
+    width: 70%;
+    height: 50%;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: rgb(179, 179, 179);
+    
+}
+
+.bolsa .slot{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 5%;
+}
+
+.slot .omagem{
+    width: 65px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -14px -15px;
+    cursor: pointer;
+}
+/* BTN-INVENTARIO BOTÃO DO INVENTARIO*/
+.alinhamento .btn-inventario{
+    display: flex;
+    width: 50%;
+    height: 20%;
+    /*background-color: transparent;*/
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    /*transform: translateY(348%);*/
+}
+.btn-inventario .btn-inventar{
+    cursor: pointer;
+    margin-left: 50%;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media screen and (max-width:768px) {
+    /* BARRA DE STATUS */
+    .display .statusBarraE{
+        min-width: 20%;
+    }
+    .display .statusBarraV{
+        min-width: 20%;
+    }
+    .display .barraE{
+        max-width: 80%;
+        left: 20%;
+    }
+    .display .barraV{
+        max-width: 80%;
+        left: 20%;
+    }
+}

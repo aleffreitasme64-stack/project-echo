@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo-style/style-jogo.css">
+    
+    <title>jogo</title>
+</head>
+<body>
+    <main>
+        <div class="status">
+            <div class="display"><span class="statusBarraV"><p>vida: </p></span><span class="barraV"><p class="scoreV"></p></span></div>
+            <div class="display"><span class="statusBarraE"><p>energia: </p></span><span class="barraE"><p class="scoreE"></p></span></div>
+        </div><!--STATUS-->
+        
+        <div class="alinhamento">
+            <div class="acao-btn">
+                <button type="button" class="btn" id="explorar">Explorar</button>
+                <button type="button" class="btn" id="descansar">Descansar</button>
+            </div><!--ACAO-BTN-->
+
+            <div class="canto-inventario">
+                <div class="bolsa">
+                    <!--AQUI TINHAM TRÊS DIVS DA CLASSE SLOT-->
+                </div><!--BOLSA-->
+            </div><!--CANTO-INVENTARIO-->   
+
+            <div class="btn-inventario">
+                <button type="button" class="btn-inventar" id="inventario">inventario</button>
+            </div><!--BTN-INVENTARIO-->
+        </div><!--ALINHAMENTO-->
+    </main><!--MAIN-->
+    <script src="script-do-jogo/script-jogo.js"></script>
+</body>
+</html>
